@@ -112,7 +112,7 @@ popularbyretweets_df_new = popularbyretweets_df[['Username', 'Tweet', 'retweets'
 
 query = "#JaganannaMosam"
 client = tweepy.Client("AAAAAAAAAAAAAAAAAAAAAGWQdAEAAAAATwVFp%2F8bcVxHisSiMnJ%2FukElwXs%3D2uvxeEZp4FznlpGaOV4n3Adx5Yi5s84XM2c1nkbGMHqPsDJyC7")
-counts = client.get_recent_tweets_count(query=query, Start_time= 2022-11-10, granularity='hour')
+counts = client.get_recent_tweets_count(query=query, start_time= "2022-11-10T00:00:00.000Z", granularity='hour')
 hour = []
 tweet_count = []
 minutes = []
