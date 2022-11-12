@@ -456,7 +456,7 @@ if df_trending['Trends'].str.contains('JaganannaMosam').any():
     #st.markdown("<h1 style='text-align: center; color: Green;'>Is Trending Now</h1>", unsafe_allow_html=True)
     rank = df_trending.index[df_trending.Trends == 'JaganannaMosam']
 
-    st.header("Trending now with India wide rank " + rank)  
+    st.header("Trending now with India wide rank " + int(rank))  
 else:
     st.text(" ")
     st.text(" ")
