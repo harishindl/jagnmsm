@@ -453,7 +453,9 @@ st.write(df_trending['Trends'].head(10))
 
 #st.title("Top Tweets by retweets")
 if df_trending['Trends'].str.contains('JaganannaMosam').any():
-    st.markdown("<h1 style='text-align: center; color: Green;'>Is Trending Now</h1>", unsafe_allow_html=True)
+    #st.markdown("<h1 style='text-align: center; color: Green;'>Is Trending Now</h1>", unsafe_allow_html=True)
+    rank = df_trending[df_trending['Trends'] == 'JaganannaMosam'].index[0]
+    st.header("Trending now with India wide rank " + rank)  
 else:
     st.text(" ")
     st.text(" ")
