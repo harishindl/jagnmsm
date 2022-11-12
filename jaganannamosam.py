@@ -459,7 +459,7 @@ if df_trending['Trends'].str.contains('JaganannaMosam').any():
     rank = trends_list.index("#JaganannaMosam")
     
     st.markdown("""
-  #### "Is trending now with India wide rank: {temp1}"   
+  #### "Is trending now - India wide rank: {temp1}"   
 """.format(temp1=rank))
 else:
     st.text(" ")
