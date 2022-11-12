@@ -458,9 +458,9 @@ if df_trending['Trends'].str.contains('JaganannaMosam').any():
     trends_list = df_trending['Trends'].tolist()
     rank = trends_list.index("#JaganannaMosam")
     
-    st.markdown(""""<span style="color:green">{}</span> Trending now with India wide rank:  {} "   """.format(rank,str(rank)))
-
-    #st.header("Trending now with India wide rank " + str(rank))  
+    st.markdown("""
+  #### "Is trending now with India wide rank: <span style="color:blue">{temp1}</span>"   
+""".format(temp1=rank))
 else:
     st.text(" ")
     st.text(" ")
