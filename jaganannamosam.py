@@ -449,7 +449,7 @@ df_trending = df_india_trends
 
 
 st.title("Top 10 trending hashtags now") 
-st.write(df_trending['Trends'].head(50))
+st.write(df_trending['Trends'].head(40))
 
 #st.title("Top Tweets by retweets")
 if df_trending['Trends'].str.contains('JaganannaMosam').any():
